@@ -136,7 +136,6 @@ h1 {
     background: linear-gradient(135deg, #c0392b, #a93226);
 }
 
-
 #tease-toast {
     margin-top: 14px;
     font-size: 1rem;
@@ -154,7 +153,7 @@ h1 {
     transform: translateY(0);
 }
 
-/* Music toggle button */
+/* Music button */
 #music-toggle {
     position: fixed;
     bottom: 20px;
@@ -176,7 +175,8 @@ h1 {
     transform: scale(1.1);
 }
 
-/* Yes page specific */
+/* YES PAGE */
+
 .yes-container h1.yes-title {
     font-size: 2.8rem;
     animation: bounceTitle 0.6s ease infinite alternate;
@@ -187,6 +187,7 @@ h1 {
     to { transform: translateY(-12px) rotate(1deg); }
 }
 
+/* MAIN TEXT */
 .yes-message {
     font-size: 1.4rem;
     color: #e91e8c;
@@ -195,8 +196,23 @@ h1 {
     animation: fadeIn 1s ease 0.5s both;
 }
 
+/* EXTRA LINE (YOUR TEXT) */
+.extra-love {
+    font-size: 1.4rem;
+    color: #e91e8c; /* SAME PINK */
+    font-weight: 700;
+    margin-top: 10px;
+    animation: fadeInUp 1.2s ease 1s both;
+}
+
+/* ANIMATIONS */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(25px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
